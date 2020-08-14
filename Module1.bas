@@ -1733,7 +1733,7 @@ Sub globalChatNotification(msgSlot As Byte)
                     Call splitAnnounce(frmAdminBot.txtBotName.Text & ": " & nick & " [" & frmAdminBot.txtAllCapsMessage.Text & "]")
                 End If
                 If frmAdminBot.chkAllCapsBan.Value = vbChecked Then
-                    Call globalChatRequest("/ban" & arUsers(id).userID & " " & frmAdminBot.txtAllCapsMin.Text)
+                    Call globalChatRequest("/ban " & arUsers(id).userID & " " & frmAdminBot.txtAllCapsMin.Text)
                 ElseIf frmAdminBot.chkAllCapsSilenceKick = vbChecked Then
                     Call globalChatRequest("/silence " & arUsers(id).userID & " " & frmAdminBot.txtAllCapsMin.Text)
                     Call globalChatRequest("/kick " & arUsers(id).userID)
