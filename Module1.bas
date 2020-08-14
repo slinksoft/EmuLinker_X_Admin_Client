@@ -1500,7 +1500,7 @@ Sub globalChatNotification(msgSlot As Byte)
     End If
     
     Dim u As Long
-            If StrComp(LCase$(arUsers(id).access), "admin", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "superadmin", vbBinaryCompare) = 0 Then
+            If StrComp(LCase$(arUsers(id).access), "admin", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "super admin", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "server co-owner", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "server owner", vbBinaryCompare) = 0 Then
                 Form1.txtChatroom.SelColor = &H8000&
 
                 If StrComp(lMsg, ";bot off " & LCase$(frmServerlist.txtUsername.Text), vbBinaryCompare) = 0 Or StrComp(msg, ";bot off *", vbBinaryCompare) = 0 Then
