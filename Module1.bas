@@ -2822,14 +2822,26 @@ Sub serverInformationMessage(msgSlot As Byte)
             wasAdmin = True
         ElseIf Mid$(lMsg, Len(":access=") + 1, Len(msg) - Len(":access=")) = "admin" Then
             MDIForm1.StatusBar1.Panels(5).Text = "Access: Admin"
+             If frmPreferences.chkStartBot.Value = vbChecked Then
+                'Start/Stop Bot
+                If myBot.botStatus = False Then Call frmAdminBot.btnONOFF_Click
+            End If
             adminFeatures = True
             wasAdmin = True
         ElseIf Mid$(lMsg, Len(":access=") + 1, Len(msg) - Len(":access=")) = "server co-owner" Then
             MDIForm1.StatusBar1.Panels(5).Text = "Access: Co-Owner"
+             If frmPreferences.chkStartBot.Value = vbChecked Then
+                'Start/Stop Bot
+                If myBot.botStatus = False Then Call frmAdminBot.btnONOFF_Click
+            End If
             adminFeatures = True
             wasAdmin = True
         ElseIf Mid$(lMsg, Len(":access=") + 1, Len(msg) - Len(":access=")) = "server owner" Then
             MDIForm1.StatusBar1.Panels(5).Text = "Access: Owner"
+             If frmPreferences.chkStartBot.Value = vbChecked Then
+                'Start/Stop Bot
+                If myBot.botStatus = False Then Call frmAdminBot.btnONOFF_Click
+            End If
             adminFeatures = True
             wasAdmin = True
         Else
