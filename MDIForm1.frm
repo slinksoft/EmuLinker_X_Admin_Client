@@ -1155,42 +1155,42 @@ Private Sub mnuTempAdmin30000_Click()
 End Sub
 
 Private Sub mnuTempModerator1440_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 1440")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 1440")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 1 day")
 End Sub
 
 Private Sub mnuTempModerator15_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 15")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 15")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 15min")
 End Sub
 
 Private Sub mnuTempModerator180_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 180")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 180")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 180min")
 End Sub
 
 Private Sub mnuTempModerator30_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 30")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 30")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 30min")
 End Sub
 
 Private Sub mnuTempModerator300_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 300")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 300")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 5 hours")
 End Sub
 
 Private Sub mnuTempModerator45_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 45")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 45")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 45min")
 End Sub
 
 Private Sub mnuTempModerator60_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 60")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 60")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator 1 hour")
 End Sub
 
 Private Sub mnuTempModerator30000_Click()
-    Call globalChatRequest("/tempmoderator " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 30000")
+    Call globalChatRequest("/tempmod " & frmUserlist.lstUserlist.SelectedItem.SubItems(3) & " 30000")
     Call addDamage(frmUserlist.lstUserlist.SelectedItem.Text, frmUserlist.lstUserlist.SelectedItem.SubItems(2), "Manual Temp Moderator [approx. 20.83 days]")
 End Sub
 
