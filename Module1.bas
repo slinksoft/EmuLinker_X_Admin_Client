@@ -590,7 +590,7 @@ Sub dropGameNotification(msgSlot As Byte)
     Dim i As Long
     Dim playerNum As Byte
     Dim nick As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
 
     'nick
@@ -653,7 +653,7 @@ Sub connectionRejectedNotification(msgSlot As Byte)
     Dim nick As String
     Dim userID As Long
     Dim msg As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     'nick
@@ -705,7 +705,7 @@ Sub userQuitNotification(msgSlot As Byte)
     Dim nick As String
     Dim userID As Long
     Dim quit As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     On Error Resume Next
@@ -860,7 +860,7 @@ Sub quitGameNotification(msgSlot As Byte)
     Dim w As ListItem
     Dim nick As String
     Dim userID As Long
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
         
     strSize = lstrlen(VarPtr(serverMessages(msgSlot).msgData(i)))
@@ -937,7 +937,7 @@ Sub playerInformation(msgSlot As Byte)
     Dim numOfUsers As Double 'dword
     Dim strConnection As String
     Dim jumpOut As Boolean
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     'Get Number of users
@@ -1007,7 +1007,7 @@ Sub serverStatus(msgSlot As Byte)
     Dim q As Long
     Dim r As Long
     Dim maxUsers As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     'Get Number of users
@@ -1170,7 +1170,7 @@ Sub joinGameNotification(msgSlot As Byte)
     Dim ping As Double 'dword
     Dim userID As Double 'word
     Dim connection As Byte
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
 
     'message(0)=0
@@ -1319,7 +1319,7 @@ Sub gameChatNotification(msgSlot As Byte)
     Dim nick As String
     Dim id As Long
     Dim msg As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     Form1.txtGameChatroom.SelStart = Len(Form1.txtGameChatroom.Text)
@@ -1441,7 +1441,7 @@ Sub globalChatNotification(msgSlot As Byte)
     Dim msg As String
     Dim id As Long
     Dim w As Long
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim str1 As String
     Dim strSize As Long
     On Error Resume Next
@@ -1853,7 +1853,7 @@ Sub userJoined(msgSlot As Byte)
     Dim strConnection As String
     Dim ping As Double 'dword
     Dim userID As Long 'word
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     
     Form1.txtChatroom.SelStart = Len(Form1.txtChatroom.Text)
@@ -1965,7 +1965,7 @@ Sub createGameNotification(msgSlot As Byte)
     Dim emulator As String
     Dim str() As String
     Dim gameID As Double 'word
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim strSize As Long
     On Error Resume Next
     
@@ -2550,7 +2550,7 @@ Sub serverInformationMessage(msgSlot As Byte)
     Dim strAlert As String
     Dim strTemp As String
     Dim sip() As String
-    Dim temp(0 To 511) As Byte
+    Dim temp(0 To 1200) As Byte
     Dim lMsg As String
     Dim strSize As Long
     On Error Resume Next
