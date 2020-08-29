@@ -19,9 +19,9 @@ Public dbPos As Long
 Public Sub weLoggedIn()
         'Chatroom
         If wasAdmin = False Then
-            'Call frmServerlist.btnExit_Click
-           ' Call MsgBox("You are NOT an Admin. Application is shutting down!", vbOKOnly, "Admin Alert!")
-          '  Unload MDIForm1
+            Call frmServerlist.btnExit_Click
+            Call MsgBox("You are NOT an Admin. Application is shutting down!", vbOKOnly, "Admin Alert!")
+            Unload MDIForm1
         End If
         Form1.Caption = "Connected to: " & frmServerlist.txtServerIp.Text & " " & serverName
         frmServerlist.List1.AddItem ":-" & Time & ": Connected!"

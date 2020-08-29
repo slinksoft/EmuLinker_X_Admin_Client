@@ -1379,7 +1379,7 @@ Sub gameChatNotification(msgSlot As Byte)
         End If
         
         If id <> -1 Then
-            If StrComp(LCase$(arUsers(id).access), "admin", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "superadmin", vbBinaryCompare) = 0 Then
+            If StrComp(LCase$(arUsers(id).access), "admin", vbBinaryCompare) = 0 Or StrComp(LCase$(arUsers(id).access), "super admin", vbBinaryCompare) = 0 Then
                 Form1.txtGameChatroom.SelColor = &H8000&
             ElseIf StrComp(LCase$(arUsers(id).access), "elevated", vbBinaryCompare) = 0 Then
                 Form1.txtGameChatroom.SelColor = &H4080&
@@ -2451,7 +2451,7 @@ Public Sub addUsers(id As Long, aliases As String)
             Form1.txtChatroom.SelColor = &H8000&
             Form1.txtChatroom.SelText = Form1.txtChatroom.SelText & "LOCAL ALERT: Admin is connected: " & arUsers(id).name & vbCrLf
             Form1.txtChatroom.SelStart = Len(Form1.txtChatroom.Text)
-        ElseIf LCase$(arUsers(id).access) = "superadmin" Then
+        ElseIf LCase$(arUsers(id).access) = "super admin" Then
             q.ForeColor = &H8000&
             Form1.txtChatroom.SelColor = &H8000&
             q.ListSubItems(1).ForeColor = &H8000&
@@ -2462,6 +2462,30 @@ Public Sub addUsers(id As Long, aliases As String)
             q.ListSubItems(6).ForeColor = &H8000&
             Form1.txtChatroom.SelColor = &H8000&
             Form1.txtChatroom.SelText = Form1.txtChatroom.SelText & "LOCAL ALERT: Super Admin is connected: " & arUsers(id).name & vbCrLf
+            Form1.txtChatroom.SelStart = Len(Form1.txtChatroom.Text)
+         ElseIf LCase$(arUsers(id).access) = "server owner" Then
+            q.ForeColor = &H8000&
+            Form1.txtChatroom.SelColor = &H8000&
+            q.ListSubItems(1).ForeColor = &H8000&
+            q.ListSubItems(2).ForeColor = &H8000&
+            q.ListSubItems(3).ForeColor = &H8000&
+            q.ListSubItems(4).ForeColor = &H8000&
+            q.ListSubItems(5).ForeColor = &H8000&
+            q.ListSubItems(6).ForeColor = &H8000&
+            Form1.txtChatroom.SelColor = &H8000&
+            Form1.txtChatroom.SelText = Form1.txtChatroom.SelText & "LOCAL ALERT: Server Owner is connected: " & arUsers(id).name & vbCrLf
+            Form1.txtChatroom.SelStart = Len(Form1.txtChatroom.Text)
+         ElseIf LCase$(arUsers(id).access) = "server co-owner" Then
+            q.ForeColor = &H8000&
+            Form1.txtChatroom.SelColor = &H8000&
+            q.ListSubItems(1).ForeColor = &H8000&
+            q.ListSubItems(2).ForeColor = &H8000&
+            q.ListSubItems(3).ForeColor = &H8000&
+            q.ListSubItems(4).ForeColor = &H8000&
+            q.ListSubItems(5).ForeColor = &H8000&
+            q.ListSubItems(6).ForeColor = &H8000&
+            Form1.txtChatroom.SelColor = &H8000&
+            Form1.txtChatroom.SelText = Form1.txtChatroom.SelText & "LOCAL ALERT: Server Co-Owner is connected: " & arUsers(id).name & vbCrLf
             Form1.txtChatroom.SelStart = Len(Form1.txtChatroom.Text)
         ElseIf LCase$(arUsers(id).access) = "elevated" Then
             q.ForeColor = &H4080&
