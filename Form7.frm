@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form frmAbout 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "About EmulinkerSF Admin Client"
+   Caption         =   "About Emulinker X Admin Client"
    ClientHeight    =   3930
    ClientLeft      =   45
    ClientTop       =   435
@@ -53,7 +53,9 @@ Private Sub Form_Load()
     txtAbout.Text = txtAbout.Text & "Compatibility: Emulinker X Server 3.1.3+" & vbCrLf
     txtAbout.Text = txtAbout.Text & "https://slinksoft.github.io/emulinkerxdoc/" & vbCrLf
     txtAbout.Text = txtAbout.Text & "Protocol: Kaillera All Rights Reserved!" & vbCrLf
-    txtAbout.Text = txtAbout.Text & "http://www.kaillera.com"
+    txtAbout.Text = txtAbout.Text & "http://www.kaillera.com" & vbCrLf
+    txtAbout.Text = txtAbout.Text & "Originally Edited by: Agent 21 iXi, Maintained and Edited By: Slink" & vbCrLf
+    txtAbout.Text = txtAbout.Text & "Special thanks to Suprafast for providing the client."
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
