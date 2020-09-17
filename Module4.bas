@@ -309,6 +309,7 @@ End Sub
 Sub reconnectToServer()
     frmServerlist.List1.AddItem "Reconnecting..... (" & Time & ")*"
     frmServerlist.List1.TopIndex = frmServerlist.List1.ListCount - 1
+    Call frmServerlist.btnExit_Click
     Call frmServerlist.btnLogin_Click
 End Sub
 
